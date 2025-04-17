@@ -1,0 +1,118 @@
+@import './layout.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html, body {
+  font-family: "Pingfang SC", "Microsoft YaHei", 微软雅黑, Helvetica, Arial, Lucida, Verdana, sans-serif;
+  line-height: 1.45;
+  -webkit-tap-highlight-color: transparent;
+  ::-webkit-input-placeholder {
+    color: #a9a9a9;
+    font-size: 12px;
+  }
+  :-moz-placeholder {
+    color: #a9a9a9;
+    font-size: 12px;
+  }
+  ::-moz-placeholder {
+    color: #a9a9a9;
+    font-size: 12px;
+  }
+  :-ms-input-placeholder {
+    color: #a9a9a9;
+    font-size: 12px;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #ccc;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    cursor: pointer;
+  }
+}
+
+textarea,input,button {
+  outline: none;
+}
+.highlight {
+  color: #003BFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+.monospace {
+  font-family: Consolas, Monaco, monospace;
+}
+.hidden {
+  display: none;
+}
+.vertical-lr{
+  writing-mode: vertical-lr;
+}
+.loading-dots{
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+  &::after{
+    content: '';
+    display: block;
+    margin-left: 3px;
+    width: 2px;
+    height: 3px;
+    animation: dots 1s linear infinite;
+    background-color: rgba(56,56,56, .8);
+    box-shadow: 6px 0px 0px 0px rgba(56,56,56,0.2),
+                12px 0px 0px 0px rgba(56,56,56,0.2);
+  }
+  &.white{
+    &::after{
+      animation: dots-white 1s linear infinite;
+      background-color: rgba(255,255,255, .8);
+      box-shadow: 6px 0px 0px 0px rgba(255,255,255,0.2),
+                12px 0px 0px 0px rgba(255,255,255,0.2);
+    }
+  }
+}
+
+@keyframes dots{
+  0%{
+       background-color: rgba(56,56,56, .8);
+       box-shadow: 6px 0px 0px 0px rgba(56,56,56,0.2),
+                   12px 0px 0px 0px rgba(56,56,56,0.2);
+     }
+   25%{
+       background-color: rgba(56,56,56, 0.4);
+       box-shadow: 6px 0px 0px 0px rgba(56,56,56,2),
+                   12px 0px 0px 0px rgba(56,56,56,0.2);
+   }
+   75%{ background-color: rgba(56,56,56, 0.4);
+       box-shadow: 6px 0px 0px 0px rgba(56,56,56,0.2),
+                   12px 0px 0px 0px rgba(56,56,56,1);
+     }
+}
+
+@keyframes dots-white{
+  0%{
+       background-color: rgba(255,255,255, .8);
+       box-shadow: 6px 0px 0px 0px rgba(255,255,255,0.2),
+                   12px 0px 0px 0px rgba(255,255,255,0.2);
+     }
+   25%{
+       background-color: rgba(255,255,255, 0.4);
+       box-shadow: 6px 0px 0px 0px rgba(255,255,255,2),
+                   12px 0px 0px 0px rgba(255,255,255,0.2);
+   }
+   75%{ background-color: rgba(255,255,255, 0.4);
+       box-shadow: 6px 0px 0px 0px rgba(255,255,255,0.2),
+                   12px 0px 0px 0px rgba(255,255,255,1);
+     }
+}

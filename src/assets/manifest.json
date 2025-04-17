@@ -1,0 +1,31 @@
+{
+  "short_name": "TM+",
+  "name": "TM+",
+  "background_color": "#2196F3",
+  "icons": [
+    {
+      "src": "logo48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "logo96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#FF4B59",
+  "orientation": "landscape",
+  "display": "standalone",
+  "start_url": "/v2/consultant.html?token=f0cf49e21ad54c5492ac36f8f9c5ccef&ssr=false#/login"
+}

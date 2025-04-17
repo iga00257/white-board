@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#FF4B59" />
+    <meta name="google" content="notranslate" />
+    <link rel="shortcut icon" href="/v2/favicon.ico" />
+    <link rel="manifest" href="/v2/manifest.json" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!--<script src="./tapm.js" charset="utf-8"></script>-->
+    <script
+      src="https://<%= htmlWebpackPlugin.options.host %>.tutormeet.com/v2/lang/lang-tw.js"
+      type="text/javascript"
+    ></script>
+    <link
+      href="
+https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--<script>
+    const GDATA = {
+      "manarolaHost": "https://g001-stage.tutormeet.com",
+      // "manarolaHost": "https://g002-49.tutormeet.com",
+      "milanoHost": "https://milano-stage.tutormeet.com",
+      "materialHost": 'https://www5-stage.tutormeet.com',
+      //"relayIP":"turn.tutormeet.com",
+      //"rdpAccount": "",
+      "rdpHost": "http://172.16.235.48:8081/guacamole/#/",
+      //课后评价跳转地址
+      "evaluateUrl": "https://stage.pahx.com/aspx/MemberWeb.Evaluation/Evaluation/index?token=xxx",
+      "sessionRoomId": "2018010210856911_000275_ZTf3SIAL_WugOnO",
+      "roomType": 3,
+      "endTime": 1513868906,
+      "startTime": 1513841906,
+      "role": 20,
+      "muteChat": 0,
+      "videoInfo": {
+        "bitrate": 100,
+        "frameRate": 20,
+        "height": 480,
+        "width": 640
+      },
+    }
+  </script>-->
+    <style>
+      .enter-room-loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(256, 256, 256, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+      }
+      .enter-room-loading.hide {
+        transition: all ease 0.3s;
+        opacity: 0;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--<% if (htmlWebpackPlugin.options.loading) { %>
+    <div class="enter-room-loading">
+      <img src="./loading.gif" alt="">
+    </div>
+  <% } %>-->
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root"></div>
+  </body>
+</html>
