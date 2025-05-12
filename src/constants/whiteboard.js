@@ -1,7 +1,7 @@
 /**
  * extract const of whiteboard for other component
  */
-import * as constants from '@/components/Whiteboard/libs/const'
+import * as constants from '@/components/Whiteboard-Milkyway/libs/const'
 
 export default constants
 

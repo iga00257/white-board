@@ -11,13 +11,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.3.0",
     "axios": "^1.8.4",
     "classnames": "^2.5.1",
+    "fabric": "^4.6.0",
+    "file-saver": "^2.0.5",
     "lodash": "^4.17.21",
     "paper": "^0.12.18",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-pdf": "^9.2.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
