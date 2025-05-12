@@ -440,7 +440,8 @@ const Whiteboard = ({ aspectRatio = 4 / 3 }) => {
   const uploadPdfRef = useRef(null)
 
   useEffect(() => {
-    if (!canvas && canvasRef.current) {
+    const canvasContainerElement = document.querySelector('.canvas-container')
+    if (!canvas && canvasRef.current && !canvasContainerElement) {
       console.log('初始化 canvas')
       const fabricCanvas = new fabric.Canvas(canvasRef.current, {
         width: whiteboardRef.current.clientWidth,
@@ -449,9 +450,7 @@ const Whiteboard = ({ aspectRatio = 4 / 3 }) => {
       })
 
       // 測試事件系統
-      fabricCanvas.on('mouse:down', function () {
-        console.log('基本事件測試: mouse:down')
-      })
+      fabricCanvas.on('mouse:down', function () {})
 
       setCanvas(fabricCanvas)
       handleResize(resizeCanvas(fabricCanvas, whiteboardRef.current)).observe(whiteboardRef.current)
